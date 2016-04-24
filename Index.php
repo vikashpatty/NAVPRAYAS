@@ -1,30 +1,29 @@
-<?php
-include('login.php'); // Includes Login Script
+<?php 
 
-if(isset($_SESSION['login_user'])){
-header("location: profile.php");
-}
+include "app/config.php";
+include "app/detect.php";
+
+if ($page_name=='') {
+	include $browser_t.'/index.html';
+	}
+elseif ($page_name=='index.html') {
+	include $browser_t.'/index.html';
+	}
+elseif ($page_name=='about.html') {
+	include $browser_t.'/about.html';
+	}
+elseif ($page_name=='services.html') {
+	include $browser_t.'/services.html';
+	}
+elseif ($page_name=='projects.html') {
+	include $browser_t.'/projects.html';
+	}
+elseif ($page_name=='contact-post.html') {
+	include 'app/contact.php';
+	}
+else
+	{
+		include $browser_t.'/404.html';
+	}
+
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-<title>NAVPRAYAS User's Login</title>
-<link href="style.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-<div id="main">
-<h1>NAVPRAYAS : A GROUP OF INNOVATIVE THOUGHTS</h1>
-<div id="login">
-<h2>Member's Login</h2>
-<form action="" method="post">
-<label>UserName :</label>
-<input id="name" name="username" placeholder="username" type="text">
-<label>Password :</label>
-<input id="password" name="password" placeholder="**********" type="password">
-<input name="submit" type="submit" value=" Login ">
-<span><?php echo $error; ?></span>
-</form>
-</div>
-</div>
-</body>
-</html>
