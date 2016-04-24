@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Navprayas</title>
+		<meta name="keywords" content="" />
+		<link rel="icon" href="http://navprayas.tk/simple/img/logo.png">
+		<link href="http://navprayas.tk/css/style.css" rel="stylesheet" type="text/css"  media="all" />
+	</head>
+	<body>
+		<!--start-wrap--->
+		<div class="wrap">
+			<!---start-header---->
+				<div class="header">
+					<div class="logo">
+						<h1><a href="http://navprayas.tk">NAVPRAYAS</a></h1>
+					</div>
+				</div>
+			<!---End-header---->
+			<!--start-content------>
+			<div class="content">
+				<img src="http://navprayas.tk/images/error-img.png" title="error" />
+				<p><span><label>O</label>pps.....</span>You Requested the page is no longer Available.</p>
+				
+				<a href="http://navprayas.tk">Back To Home</a>
+				
+   			</div>
+			<!--End-Cotent------>
+		</div>
+		<!--End-wrap--->
+	</body>
+</html>
